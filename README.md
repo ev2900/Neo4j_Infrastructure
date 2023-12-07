@@ -6,7 +6,7 @@ This repository provides examples and reusable code sample with respect to deplo
 
 Different deployment options are explained. A list of the different options are below:
 * [Neo4j via. docker without SSL](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README.md#without-ssl)
-* Neo4j via. docker with self signed SSL certificate
+* [Neo4j via. docker with self signed SSL certificate](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README.md#with-self-signed-ssl-certificate)
 * Neo4j via. Amazon Elastic Container Service (ECS) Fargate without SSL
 
 ## Docker
