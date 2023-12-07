@@ -11,4 +11,10 @@ Different deployment options are explained. A list of the different options are 
 
 ## Docker
 
+1. [Install docker](https://docs.docker.com/engine/install/) on the machine you will be using to run these examples
+
+## without SSL
+
+## with self signed SSL certificate
+
 ## AWS Elastic Container Service (ECS)
