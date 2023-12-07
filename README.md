@@ -15,6 +15,10 @@ Different deployment options are explained. A list of the different options are 
 
 ## without SSL
 
+2. 
+
 ## with self signed SSL certificate
+
+2. 
 
 ## AWS Elastic Container Service (ECS)
