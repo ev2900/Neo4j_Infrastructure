@@ -11,14 +11,26 @@ Different deployment options are explained. A list of the different options are 
 
 ## Docker
 
-1. [Install docker](https://docs.docker.com/engine/install/) on the machine you will be using to run these examples
+[Install docker](https://docs.docker.com/engine/install/) on the machine you will be using to run these examples
+
+If you are using Linux Ubuntu you can run the following commands to install both docker and docker compose
+
+1. ```sudo apt-get install docker``` <br>
+2. ```sudo apt-get install docker-compose```
 
 ## without SSL
 
-2.
+Once you have docker installed to launch a docker container with Neo4j running in it, following the instructions below 
+
+1. Naviage to the [docker/without_ssl/](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/without_ssl) folder
+
+2. Run ```docker-compose up```. Leave the terminal widow open
+
+3. Naviage to [localhost:7474/browser/](http://localhost:7474/browser/). The default user name and password is neo4j / neo4j
 
 ## with self signed SSL certificate
 
 2.
 
 ## AWS Elastic Container Service (ECS)
+
