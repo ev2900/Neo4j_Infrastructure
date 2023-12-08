@@ -4,7 +4,7 @@
 
 This repository provides examples and reusable code sample with respect to deploying Neo4j Community Edition.
 
-Different deployment options are explained. A list of the different options are below:
+Different deployment options are explained. A list of the different options is below:
 * [Neo4j via. docker without SSL](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README.md#without-ssl)
 * [Neo4j via. docker with self signed SSL certificate](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README.md#with-self-signed-ssl-certificate)
 * Neo4j via. Amazon Elastic Container Service (ECS) Fargate without SSL
@@ -22,15 +22,15 @@ If you are using Linux Ubuntu you can run the following commands to install both
 
 Once you have docker installed to launch a docker container with Neo4j running in it, following the instructions below 
 
-1. Naviage to the [docker/without_ssl/](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/without_ssl) folder
+1. Navigate to the [docker/without_ssl/](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/without_ssl) folder
 
 2. Run ```docker-compose up```. Leave the terminal widow open
 
-3. Naviage to [localhost:7474/browser/](http://localhost:7474/browser/). The default user name and password is neo4j / neo4j
+3. Go to [localhost:7474/browser/](http://localhost:7474/browser/) via. a web browser. The default user name and password are neo4j / neo4j
 
 ## with self signed SSL certificate
 
-2.
+2. 
 
 ## AWS Elastic Container Service (ECS)
 
