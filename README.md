@@ -30,7 +30,7 @@ Once you have docker installed to launch a docker container with Neo4j running i
 
 ## with self signed SSL certificate
 
-2. 
+1. We need to generate a self signed certificate 
 
 ## AWS Elastic Container Service (ECS)
 
