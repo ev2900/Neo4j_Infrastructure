@@ -29,7 +29,7 @@ jobs:
           aws-region: us-east-1
           
       - name: Upload neo4j_ecs_basic.yaml to S3
-        run: aws s3 cp /home/runner/work/Neo4j_Infrastructure/Neo4j_Infrastructure/neo4j_ecs_basic.yaml s3://sharkech-public/misc-public/neo4j_ecs_basic.yaml
+        run: aws s3 cp /home/runner/work/Neo4j_Infrastructure/Neo4j_Infrastructure/ecs/without_ssl/neo4j_ecs_basic.yaml s3://sharkech-public/misc-public/neo4j_ecs_basic.yaml
 
       - name: Upload neo4j_ecs_ssl_self-signed.yaml to S3
-        run: aws s3 cp /home/runner/work/Neo4j_Infrastructure/Neo4j_Infrastructure/neo4j_ecs_ssl_self-signed.yaml s3://sharkech-public/misc-public/neo4j_ecs_ssl_self-signed.yaml
+        run: aws s3 cp /home/runner/work/Neo4j_Infrastructure/Neo4j_Infrastructure/ecs/with_ssl_self-signed/neo4j_ecs_ssl_self-signed.yaml s3://sharkech-public/misc-public/neo4j_ecs_ssl_self-signed.yaml
