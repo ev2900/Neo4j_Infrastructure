@@ -65,3 +65,7 @@ ssl/
 
 ## AWS Elastic Container Service (ECS)
 
+We can also host Neo4j on an AWS Fargate Elastic Container Service (ECS) instance. Follow the instructions below to deploy on ECS
+
+## without SSL
+
