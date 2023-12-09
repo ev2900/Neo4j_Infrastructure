@@ -6,7 +6,7 @@ This repository provides examples and reusable code sample with respect to deplo
 
 Different deployment options are explained. A list of the different options is below:
 * [Neo4j via. docker without SSL](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README.md#without-ssl)
-* [Neo4j via. docker with self signed SSL certificate](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README.md#with-self-signed-ssl-certificate)
+* [Neo4j via. docker with SSL via. self signed certificate](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README.md#with-self-signed-ssl-certificate)
 * Neo4j via. Amazon Elastic Container Service (ECS) Fargate without SSL
 
 ## Docker
@@ -28,9 +28,21 @@ Once you have docker installed to launch a docker container with Neo4j running i
 
 3. Go to [localhost:7474/browser/](http://localhost:7474/browser/) via. a web browser. The default user name and password are neo4j / neo4j
 
-## with self signed SSL certificate
+## with SSL via. self signed certificate
 
-1. We need to generate a self signed certificate
+1. Generate a self signed certificate via. OpenSSL.
+
+To enable SSL Neo4j requires a private key and a public certificate. To generate these with OpenSSL via. the terminal run the following commands to generate a private key and then use the private key to create a self signed certificate
+
+```openssl genrsa -out private.key 2048```
+
+```openssl req -new -x509 -key private.key -out public.crt -days 365```
+
+2. Create the expected folder structure
+
+Neo4j 
+
+3. I
 
 ## AWS Elastic Container Service (ECS)
 
