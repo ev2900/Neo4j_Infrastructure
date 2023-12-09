@@ -69,3 +69,4 @@ We can also host Neo4j on an AWS Fargate Elastic Container Service (ECS) instanc
 
 ## without SSL
 
+[![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=open-search-cloudwatch-alarms&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/neo4j_ecs_basic.yaml)
