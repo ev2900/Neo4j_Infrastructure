@@ -1,6 +1,6 @@
 # Neo4j Infrastructure
 
-<img width="85" alt="map-user" src="https://img.shields.io/badge/views-048-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-001-green">
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-143-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-001-green">
 
 This repository provides examples and reusable code sample with respect to deploying Neo4j Community Edition.
 
@@ -20,7 +20,7 @@ If you are using Linux Ubuntu you can run the following commands to install both
 
 ## without SSL
 
-Once you have docker installed to launch a docker container with Neo4j running in it, following the instructions below 
+Once you have docker installed to launch a docker container with Neo4j running in it, following the instructions below
 
 1. Navigate to the [docker/without_ssl/](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/without_ssl) folder
 
@@ -30,7 +30,7 @@ Once you have docker installed to launch a docker container with Neo4j running i
 
 ## with self signed SSL certificate
 
-1. We need to generate a self signed certificate 
+1. We need to generate a self signed certificate
 
 ## AWS Elastic Container Service (ECS)
 
