@@ -15,8 +15,8 @@ Different deployment options are explained. A list of the different options is b
 
 If you are using Linux Ubuntu you can run the following commands to install both docker and docker compose
 
-1. ```sudo apt-get install docker``` <br>
-2. ```sudo apt-get install docker-compose```
+```sudo apt-get install docker``` <br>
+```sudo apt-get install docker-compose```
 
 ## without SSL
 
