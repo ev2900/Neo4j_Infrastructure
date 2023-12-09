@@ -26,7 +26,7 @@ Once you have docker installed to launch a docker container with Neo4j running i
 
 2. Run ```docker-compose up```. Leave the terminal widow open
 
-3. Go to [localhost:7474/browser/](http://localhost:7474/browser/) via. a web browser. The default user name and password are neo4j / neo4j
+3. Go to [http://localhost:7474/browser/](http://localhost:7474/browser/) via. a web browser. The default user name and password are neo4j / neo4j
 
 ## with SSL via. self signed certificate
 
@@ -40,9 +40,28 @@ To enable SSL Neo4j requires a private key and a public certificate. To generate
 
 2. Create the expected folder structure
 
-Neo4j 
+Our [docker-compose.yaml](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/with_ssl_self-signed) file expects copies of the private.key and public.crt created in the previous steps to be arranged in a certain folder structure. 
 
-3. I
+Arrange the [docker-compose.yaml](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/with_ssl_self-signed), copies of the private.key and public.crt so they matches the structure below. Create directories as needed 
+
+```
+docker-compose.yaml
+ssl/
+    bolt/
+        revoked/
+        trusted/
+            public.crt
+        private.key
+    https/
+        revoked/
+        trusted/
+            public.crt
+        private.key
+```
+
+3. Run ```docker-compose up```. Leave the terminal widow open
+
+4. Go to [https://localhost:7473/browser/](https://localhost:7473/browser/) via. a web browser. The default user name and password are neo4j / neo4j
 
 ## AWS Elastic Container Service (ECS)
 
