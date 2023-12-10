@@ -1,5 +1,4 @@
-Description: OpenSearch Local Dashboard Server
-
+Description: Neo4j on ECS
 Parameters:
   # Should the ECS service be publicly accessible ? 
   PubliclyAccessible:
