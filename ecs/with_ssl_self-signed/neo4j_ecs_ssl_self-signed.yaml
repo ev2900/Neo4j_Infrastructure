@@ -159,7 +159,6 @@ Resources:
               - 'sts:AssumeRole'
       # Premissions
       Policies:
-        # Firehose premissions
         - PolicyName: ecs_task_policy
           PolicyDocument:
             Version: '2012-10-17'
