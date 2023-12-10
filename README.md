@@ -76,3 +76,19 @@ We can also host Neo4j on an AWS Fargate Elastic Container Service (ECS) instanc
 When you are deploying the stack toggle the publicly accessible option. If the option is set to Yes the CloudFormation stack will add a rule to the network security group to allow inbound network access from the public internet. If the option is set to No then post CloudFormation deployment you will need to update the inbound rules of the security group to allow traffic from your desired network location
 
 <img width="650" alt="public_access_option" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/public_access_option.png">
+
+2. Locate the public ip address of the ECS task
+
+Before we can navigate to the Neo4j browser we need to find the public IP address assigned to the ECS task. To find the public IP address navigate to the [neo4j-fargate-cluster](https://us-east-1.console.aws.amazon.com/ecs/v2/clusters/neo4j-fargate-cluster/) that was deployed by the CloudFormation template.
+
+Then click on the task tab and then on the task id
+
+<img width="650" alt="public_access_option" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/ecs_task.PNG">
+
+Locate the public IP address field
+
+<img width="650" alt="public_access_option" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/ecs_task_details.PNG">
+
+3. Navigate to the Neo4j dashboard
+
+Using the public IP address from the last step navigate to http://<elastic-ip>:7474/browser/
