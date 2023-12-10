@@ -73,4 +73,6 @@ We can also host Neo4j on an AWS Fargate Elastic Container Service (ECS) instanc
 
 [![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=neo4j-without-ssl&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/neo4j_ecs_basic.yaml)
 
-When you are deploying the stack toggle the publicly accessible option 
+When you are deploying the stack toggle the publicly accessible option. If the option is set to Yes the CloudFormation stack will add a rule to the network security group to allow inbound network access from the public internet. If the option is set to No then post CloudFormation deployment you will need to update the inbound rules of the security group to allow traffic from your desired network location
+
+<img width="650" alt="public_access_option" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/public_access_option.png">
