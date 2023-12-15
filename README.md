@@ -1,6 +1,6 @@
 # Neo4j Infrastructure
 
-<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-0-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-143-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-003-green">
+<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-0-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-510-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-003-green">
 
 This repository provides examples and reusable code sample with respect to deploying Neo4j Community Edition.
 
@@ -40,9 +40,9 @@ To enable SSL Neo4j requires a private key and a public certificate. To generate
 
 2. Create the expected folder structure
 
-Our [docker-compose.yaml](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/with_ssl_self-signed) file expects copies of the private.key and public.crt created in the previous steps to be arranged in a certain folder structure. 
+Our [docker-compose.yaml](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/with_ssl_self-signed) file expects copies of the private.key and public.crt created in the previous steps to be arranged in a certain folder structure.
 
-Arrange the [docker-compose.yaml](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/with_ssl_self-signed), copies of the private.key and public.crt so they matches the structure below. Create directories as needed 
+Arrange the [docker-compose.yaml](https://github.com/ev2900/Neo4j_Infrastructure/tree/main/docker/with_ssl_self-signed), copies of the private.key and public.crt so they matches the structure below. Create directories as needed
 
 ```
 docker-compose.yaml
