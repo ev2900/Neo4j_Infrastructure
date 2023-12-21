@@ -234,11 +234,10 @@ Resources:
               hostPort: 7687
               protocol: tcp
               appProtocol: http
-          command:
+          command: 
             - "/bin/sh"
             - "-c"
-            - "sudo"
-            - "apt update"
+            - "apt-get install sudo"
           environment:
             - name: NEO4J_dbms_memory_pagecache_size
               value: 1G
