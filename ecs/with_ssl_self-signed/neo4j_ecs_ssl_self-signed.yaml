@@ -237,7 +237,8 @@ Resources:
           command: 
             - "/bin/sh"
             - "-c"
-            - "sudo apt-get update"
+            - "su"
+            - "apt-get update && apt-get install sudo"
           environment:
             - name: NEO4J_dbms_memory_pagecache_size
               value: 1G
