@@ -237,7 +237,7 @@ Resources:
           command:
             - "/bin/sh"
             - "-c"
-            - "sudo apt update && sudo apt install awscli"
+            - "apt update && apt install awscli"
           environment:
             - name: NEO4J_dbms_memory_pagecache_size
               value: 1G
