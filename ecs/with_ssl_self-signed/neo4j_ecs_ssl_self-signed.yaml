@@ -237,7 +237,7 @@ Resources:
           command:
             - "/bin/sh"
             - "-c"
-            - "yum update && echo 'Hello, World!'"
+            - "cat /etc/os-release"
           environment:
             - name: NEO4J_dbms_memory_pagecache_size
               value: 1G
