@@ -18,7 +18,7 @@ If you are using Linux Ubuntu you can run the following commands to install both
 ```sudo apt-get install docker``` <br>
 ```sudo apt-get install docker-compose```
 
-## without SSL
+### without SSL
 
 Once you have docker installed to launch a docker container with Neo4j running in it, following the instructions below
 
@@ -28,7 +28,7 @@ Once you have docker installed to launch a docker container with Neo4j running i
 
 3. Go to [http://localhost:7474/browser/](http://localhost:7474/browser/) via. a web browser. The default user name and password are neo4j / neo4j
 
-## with SSL via. self signed certificate
+### with SSL via. self signed certificate
 
 1. Generate a self signed certificate via. OpenSSL.
 
@@ -67,7 +67,7 @@ ssl/
 
 We can also host Neo4j on an AWS Fargate Elastic Container Service (ECS) instance. Follow the instructions below to deploy on ECS
 
-## without SSL
+### without SSL
 
 1. Click the button below to deploy a CloudFormation stack
 
@@ -93,6 +93,6 @@ Locate the public IP address field
 
 Using the public IP address from the last step navigate to http://**elastic-ip**:7474/browser/
 
-## with SSL via. self signed certificate
+### with SSL via. self signed certificate
 
 [![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=neo4j-with-ssl-self-signed&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/neo4j_ecs_ssl_self-signed.yaml)
