@@ -236,8 +236,8 @@ Resources:
               appProtocol: http
           command:
             - "/bin/sh"
-            - "sudo yum update"
-            - "echo 'Hello, World!'"
+            - "-c"
+            - "yum update && echo 'Hello, World!'"
           environment:
             - name: NEO4J_dbms_memory_pagecache_size
               value: 1G
