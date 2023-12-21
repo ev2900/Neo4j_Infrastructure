@@ -234,6 +234,8 @@ Resources:
               hostPort: 7687
               protocol: tcp
               appProtocol: http
+          command:
+            - "echo Hello World"
           environment:
             - name: NEO4J_dbms_memory_pagecache_size
               value: 1G
@@ -241,8 +243,6 @@ Resources:
               value: 1G
             - name: NEO4J_dbms_memory_heap_max__size
               value: 1G
-          Command:
-            - "echo \"Hello World\""
           logConfiguration:
             logDriver: awslogs
             options:
