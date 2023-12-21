@@ -235,8 +235,8 @@ Resources:
               protocol: tcp
               appProtocol: http
           command:
-            - "sudo yum update"
-            - "sudo yum install awscli"
+            - "sudo"
+            - "yum update"
             - "/bin/sh"
             - "-c"
             - "echo 'Hello, World!'"
