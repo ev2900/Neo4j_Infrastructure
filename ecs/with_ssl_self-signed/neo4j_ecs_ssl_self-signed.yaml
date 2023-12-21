@@ -235,7 +235,9 @@ Resources:
               protocol: tcp
               appProtocol: http
           command:
-            - "/bin/sh -c echo 'Hello, World!'"
+            - "/bin/sh"
+            - "-c"
+            - "echo 'Hello, World!'"
           environment:
             - name: NEO4J_dbms_memory_pagecache_size
               value: 1G
