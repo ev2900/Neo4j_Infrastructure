@@ -229,11 +229,6 @@ Resources:
               hostPort: 7474
               protocol: tcp
               appProtocol: http
-            - name: https-port
-              containerPort: 7473
-              hostPort: 7473
-              protocol: tcp
-              appProtocol: https
             - name: neo4j-bolt-port
               containerPort: 7687
               hostPort: 7687
