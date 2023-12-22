@@ -222,23 +222,23 @@ Resources:
       NetworkMode: awsvpc
       ContainerDefinitions:
         - name: neo4j
-          image: neo4j:latest
+          image: 723697512522.dkr.ecr.us-east-1.amazonaws.com/neo4j-ssl:latest
           portMappings:
             - name: http-port
               containerPort: 7474
               hostPort: 7474
               protocol: tcp
               appProtocol: http
+            - name: https-port
+              containerPort: 7473
+              hostPort: 7473
+              protocol: tcp
+              appProtocol: https
             - name: neo4j-bolt-port
               containerPort: 7687
               hostPort: 7687
               protocol: tcp
               appProtocol: http
-          command: 
-            - "/bin/sh"
-            - "-c"
-            - "su"
-            - "apt-get update && apt-get install awscli"
           environment:
             - name: NEO4J_dbms_memory_pagecache_size
               value: 1G
@@ -246,6 +246,36 @@ Resources:
               value: 1G
             - name: NEO4J_dbms_memory_heap_max__size
               value: 1G
+            - name: NEO4J_server_http_listen__address
+              value: 7474
+            - name: NEO4J_server_https_listen__address
+              value: 7473
+            - name: NEO4J_server_bolt_listen__address
+              value: 7687
+            - name: NEO4J_dbms_connector_bolt_tls__level
+              value: OPTIONAL
+            - name: NEO4J_dbms_ssl_policy_bolt_enabled
+              value: true
+            - name: NEO4J_dbms_ssl_policy_bolt_base__directory
+              value: ./ssl/bolt
+            - name: NEO4J_dbms_ssl_policy_bolt_private__key
+              value: private.key
+            - name: NEO4J_dbms_ssl_policy_bolt_public__certificate
+              value: public.crt
+            - name: NEO4J_dbms_ssl_policy_bolt_client__auth
+              value: NONE
+            - name: NEO4J_server_https_enabled
+              value: true
+            - name: NEO4J_dbms_ssl_policy_https_enabled
+              value: true
+            - name: NEO4J_dbms_ssl_policy_https_base__directory
+              value: ./ssl/https
+            - name: NEO4J_dbms_ssl_policy_https_private__key
+              value: private.key
+            - name: NEO4J_dbms_ssl_policy_https_public__certificate
+              value: public.crt
+            - name: NEO4J_dbms_ssl_policy_https_client__auth
+              value: NONE
           logConfiguration:
             logDriver: awslogs
             options:
