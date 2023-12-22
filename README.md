@@ -95,4 +95,18 @@ Using the public IP address from the last step navigate to http://**elastic-ip**
 
 ### with SSL via. self signed certificate
 
+1. Generate a self signed certificate via. OpenSSL.
+
+To enable SSL Neo4j requires a private key and a public certificate. To generate these with OpenSSL via. the terminal run the following commands to generate a private key and then use the private key to create a self signed certificate
+
+```openssl genrsa -out private.key 2048```
+
+```openssl req -new -x509 -key private.key -out public.crt -days 365```
+
+2. Create a customer container image that includes the SSL certificates
+
+3. Create an ECR repository and push the container image
+
+4. Deploy Neo4j using on ECS using the customer container image
+
 [![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=neo4j-with-ssl-self-signed&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/neo4j_ecs_ssl_self-signed.yaml)
