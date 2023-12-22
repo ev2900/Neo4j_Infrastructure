@@ -228,16 +228,10 @@ Resources:
               containerPort: 7474
               hostPort: 7474
               protocol: tcp
-              appProtocol: http
-            - name: https-port
-              containerPort: 7473
-              hostPort: 7473
-              protocol: tcp
             - name: neo4j-bolt-port
               containerPort: 7687
               hostPort: 7687
               protocol: tcp
-              appProtocol: http
           environment:
             - name: NEO4J_dbms_memory_pagecache_size
               value: 1G
