@@ -8,7 +8,7 @@ Different deployment options are explained. A list of the different options is b
 * [Neo4j via. docker without SSL](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README.md#without-ssl)
 * [Neo4j via. docker with SSL via. self signed certificate](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README.md#with-self-signed-ssl-certificate)
 * [Neo4j via. Amazon Elastic Container Service (ECS) Fargate without SSL](https://github.com/ev2900/Neo4j_Infrastructure/tree/main#without-ssl-1)
-* [Neo4j via. Amazon Elastic Container Service (ECS) Fargate with SSL via. self signed certificate]()
+* [Neo4j via. Amazon Elastic Container Service (ECS) Fargate with SSL via. self signed certificate](https://github.com/ev2900/Neo4j_Infrastructure/tree/main#with-ssl-via-self-signed-certificate-1)
 
 ## Docker
 
