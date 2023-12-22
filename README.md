@@ -104,9 +104,7 @@ To enable SSL Neo4j requires a private key and a public certificate. To generate
 
 ```openssl req -new -x509 -key private.key -out public.crt -days 365```
 
-2. Create a customer container image that includes the SSL certificates
-
-3. Create an ECR repository and push the container image
+2. Create a custom container image that includes the SSL certificates and push the image to an AWS elastic container registry (ECR) repository
 
 4. Deploy Neo4j using on ECS using the customer container image
 
