@@ -238,11 +238,11 @@ Resources:
               protocol: tcp
           environment:
             - name: NEO4J_server_http_listen__address
-              value: 7474
+              value: :7474
             - name: NEO4J_server_https_listen__address
-              value: 7473
+              value: :7473
             - name: NEO4J_server_bolt_listen__address
-              value: 7687
+              value: :7687
             - name: NEO4J_dbms_connector_bolt_tls__level
               value: OPTIONAL
             - name: NEO4J_dbms_ssl_policy_bolt_enabled
