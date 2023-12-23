@@ -102,7 +102,15 @@ To enable SSL Neo4j requires a private key and a public certificate. To generate
 
 ```openssl req -new -x509 -key private.key -out public.crt -days 365```
 
-2. Create a custom container image that includes the SSL certificates and push the image to an AWS elastic container registry (ECR) repository
+2. Create a custom container image that includes the SSL certificate and push the image to an AWS elastic container registry (ECR) repository
+
+Copies of the SSL certificate file and private key file need to be on the local file system of the container under a specific directory. To make copies of the certificate and private key available, create a custom container image based on the public neo4j image but customized to include in the certificate and private key files. Once we create the customized container image, we will push it to AWS Elastic Container Registry. Follow the steps below 
+
+Click the button below to deploy a CloudFormation stack. The stack will create a repository the custom image can be pushed to
+
+[![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=ecr-repository&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/ecr_repository.yaml)
+
+
 
 4. Deploy Neo4j using on ECS using the customer container image
 
