@@ -49,14 +49,10 @@ Arrange the [docker-compose.yaml](https://github.com/ev2900/Neo4j_Infrastructure
 docker-compose.yaml
 ssl/
     bolt/
-        revoked/
-        trusted/
-            public.crt
+        public.crt
         private.key
     https/
-        revoked/
-        trusted/
-            public.crt
+        public.crt
         private.key
 ```
 
