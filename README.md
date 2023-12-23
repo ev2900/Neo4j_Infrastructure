@@ -118,9 +118,9 @@ Then click on the view push commands button
 
 <img width="700" alt="ecr_push_commands" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/ecr_push_commands.png">
 
+Follow the commands to build the image and push it to the ECR repository.
 
-
-
+--------
 
 4. Deploy Neo4j using on ECS using the customer container image
 
