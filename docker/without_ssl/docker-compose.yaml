@@ -1,7 +1,7 @@
 version: '3'
 services:
   neo4j: 
-    # You can find the latest version at https://hub.docker.com/_/neo4j
+    # You can find the latest version at https://hub.docker.com/_/neo4j at the time this was developed the latest version is 5.14.0
     image: neo4j:latest
     ports:
       - 7474:7474 #HTTP port
