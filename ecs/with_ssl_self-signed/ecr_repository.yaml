@@ -1,1 +1,7 @@
+Description: Neo4j on ECS with SSL
 
+Resources:
+  ECSRepository:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: neo4j-ecs-w-ssl
