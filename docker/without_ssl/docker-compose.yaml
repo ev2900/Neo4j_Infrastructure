@@ -12,9 +12,8 @@ services:
       - ./logs:/logs
       - ./plugins:/plugins
     environment:
-      - NEO4J_dbms_memory_pagecache_size=1G
-      - NEO4J_dbms.memory.heap.initial_size=1G
-      - NEO4J_dbms_memory_heap_max__size=1G
+      - NEO4J_server_http_listen__address=:7474
+      - NEO4J_server_bolt_listen__address=:7687
 
 # docker-compose up
 # Neo4j dashboard = localhost:7474/browser/
