@@ -90,7 +90,7 @@ Locate the public IP address field
 
 3. Navigate to the Neo4j dashboard
 
-Using the public IP address from the last step navigate to http://**elastic-ip**:7474/browser/
+Using the public IP address from the last step navigate to http://**elastic-ip**:7474/browser/ . The default username is *neo4j* and the default password is *neo4j*
 
 ### with SSL via. self signed certificate
 
