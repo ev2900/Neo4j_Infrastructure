@@ -222,7 +222,7 @@ Resources:
       NetworkMode: awsvpc
       ContainerDefinitions:
         - name: neo4j
-          image: 723697512522.dkr.ecr.us-east-1.amazonaws.com/neo4j-ssl:latest
+          image: 723697512522.dkr.ecr.us-east-1.amazonaws.com/neo4j-ssl-2:latest
           portMappings:
             - name: http-port
               containerPort: 7474
