@@ -118,10 +118,16 @@ Then click on the view push commands button
 
 <img width="700" alt="ecr_push_commands" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/ecr_push_commands.png">
 
-Follow the commands to build the image and push it to the ECR repository.
-
---------
+Follow the commands to build the image and push it to the ECR repository. When you are running the commands ensure your termainal is in a directory that has the [docker](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/ecs/with_ssl_self-signed/dockerfile), certificate file and private key file.
 
 4. Deploy Neo4j using on ECS using the customer container image
 
+Click the button below to deploy a CloudFormation stack. The stack will deploy Neo4j to ECS along with all of the corresponding networking components.
+
 [![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=neo4j-with-ssl-self-signed&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/neo4j_ecs_ssl_self-signed.yaml)
+
+When you are deploying the stack toggle the publicly accessible option. If the option is set to Yes the CloudFormation stack will add a rule to the network security group to allow inbound network access from the public internet. If the option is set to No then post CloudFormation deployment you will need to update the inbound rules of the security group to allow traffic from your desired network location
+
+<img width="650" alt="public_access_option_2" src="">
+
+Additonally you will need to 
