@@ -1,6 +1,6 @@
 # Neo4j Infrastructure
 
-<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-0-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-457-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-006-green">
+<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-28313-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-457-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-006-green">
 
 This repository provides examples and reusable code sample with respect to deploying Neo4j Community Edition.
 
@@ -104,7 +104,7 @@ To enable SSL Neo4j requires a private key and a public certificate. To generate
 
 2. Create a custom container image that includes the SSL certificate and push the image to an AWS elastic container registry (ECR) repository
 
-Copies of the SSL certificate file and private key file need to be on the local file system of the container under a specific directory. To make copies of the certificate and private key available, create a custom container image based on the public neo4j image but customized to include in the certificate and private key files. Once we create the customized container image, we will push it to AWS Elastic Container Registry. Follow the steps below 
+Copies of the SSL certificate file and private key file need to be on the local file system of the container under a specific directory. To make copies of the certificate and private key available, create a custom container image based on the public neo4j image but customized to include in the certificate and private key files. Once we create the customized container image, we will push it to AWS Elastic Container Registry. Follow the steps below
 
 Click the button below to deploy a CloudFormation stack. The stack will create a repository the custom image can be pushed to
 
@@ -150,6 +150,6 @@ Locate the public IP address field
 
 <img width="650" alt="public_access_option" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/ecs_task_details.PNG">
 
-Since we are using self signed certificate go to https://**elastic-ip**:7687 and accept the security risk. You must allow the browser to ignore the security warning it throw for the self signed certificate 
+Since we are using self signed certificate go to https://**elastic-ip**:7687 and accept the security risk. You must allow the browser to ignore the security warning it throw for the self signed certificate
 
 Then navigate to https://**elastic-ip**:7473/browser/ . The default username is *neo4j* and the default password is *neo4j*
