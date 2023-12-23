@@ -130,4 +130,4 @@ When you are deploying the stack toggle the publicly accessible option. If the o
 
 <img width="650" alt="public_access_option_2" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/public_accessable_2.png">
 
-
+You will also need to 
