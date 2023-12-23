@@ -58,7 +58,9 @@ ssl/
 
 3. Run ```docker-compose up```. Leave the terminal widow open
 
-4. Go to [https://localhost:7473/browser/](https://localhost:7473/browser/) via. a web browser. The default user name and password are neo4j / neo4j
+4. If you are using a self signed certificate go to [https://localhost:7687/](https://localhost:7687/) and accept the security risk. You must allow the browser to ignore the security warning it throw for the self signed certificate
+
+5. Go to [https://localhost:7473/browser/](https://localhost:7473/browser/) via. a web browser. The default user name and password are neo4j / neo4j
 
 ## AWS Elastic Container Service (ECS)
 
