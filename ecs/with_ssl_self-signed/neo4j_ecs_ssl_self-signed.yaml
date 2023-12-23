@@ -10,6 +10,11 @@ Parameters:
       - 'Yes'
     Description: Do you want to add a inbound rules to the NSG to allow all inbound taffic? ie. making the container accessible to the public internet
 
+  # ECR container image URI to use 
+  ImageURI:
+    Type: String
+    Description: The URI of the ECR container image you want to use for the Neo4j ECS deployment
+
 Conditions:
   isPubliclyAccessible: !Equals [!Ref PubliclyAccessible, 'Yes']
 
@@ -222,7 +227,7 @@ Resources:
       NetworkMode: awsvpc
       ContainerDefinitions:
         - name: neo4j
-          image: 585678569493.dkr.ecr.us-east-1.amazonaws.com/neo4j-w-ssl:latest
+          image: !Ref ImageURI
           portMappings:
             - name: http-port
               containerPort: 7474
