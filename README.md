@@ -128,6 +128,6 @@ Click the button below to deploy a CloudFormation stack. The stack will deploy N
 
 When you are deploying the stack toggle the publicly accessible option. If the option is set to Yes the CloudFormation stack will add a rule to the network security group to allow inbound network access from the public internet. If the option is set to No then post CloudFormation deployment you will need to update the inbound rules of the security group to allow traffic from your desired network location
 
-<img width="650" alt="public_access_option_2" src="">
+<img width="650" alt="public_access_option_2" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/public_accessable_2.png">
 
-Additonally you will need to 
+
