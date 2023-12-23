@@ -1,1 +1,6 @@
+FROM neo4j:latest
 
+ADD ./public.crt /var/lib/neo4j/ssl/bolt/public.crt
+ADD ./private.key /var/lib/neo4j/ssl/bolt/private.key
+ADD ./public.crt /var/lib/neo4j/ssl/https/public.crt
+ADD ./private.key /var/lib/neo4j/ssl/https/private.key
