@@ -120,7 +120,7 @@ Then click on the view push commands button
 
 Follow the commands to build the image and push it to the ECR repository. When you are running the commands ensure your termainal is in a directory that has the [docker](https://github.com/ev2900/Neo4j_Infrastructure/blob/main/ecs/with_ssl_self-signed/dockerfile), certificate file and private key file.
 
-4. Deploy Neo4j using on ECS using the customer container image
+3. Deploy Neo4j using on ECS using the customer container image
 
 Click the button below to deploy a CloudFormation stack. The stack will deploy Neo4j to ECS along with all of the corresponding networking components.
 
@@ -130,4 +130,14 @@ When you are deploying the stack toggle the publicly accessible option. If the o
 
 <img width="650" alt="public_access_option_2" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/public_accessable_2.png">
 
-You will also need to 
+You will also need to enter the URI of the ECR image as part of the CloudFormation stack parmeters. This will be the URI of modified Neo4j image we built and loaded to ECR in step 2.
+
+<img width="650" alt="public_access_option_2" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/image_URI.png">
+
+To find the URI of the container image, navigate to the [ECS repository home page](https://us-east-1.console.aws.amazon.com/ecr/private-registry/repositories). Click on the *neo4j-ecs-w-ssl* repository and click on the copy URI button
+
+<img width="650" alt="public_access_option_2" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/copy_URI.png">
+
+4. Access Neo4j
+
+
