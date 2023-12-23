@@ -241,37 +241,37 @@ Resources:
               value: 1G
             - name: NEO4J_dbms.memory.heap.initial_size
               value: 1G
-            - name: NEO4J_dbms_memory_heap_max__size
+            - name: NEO4J_dbms_memory_heap_max_size
               value: 1G
-            - name: NEO4J_server_http_listen__address
+            - name: NEO4J_server_http_listen_address
               value: 7474
-            - name: NEO4J_server_https_listen__address
+            - name: NEO4J_server_https_listen_address
               value: 7473
-            - name: NEO4J_server_bolt_listen__address
+            - name: NEO4J_server_bolt_listen_address
               value: 7687
-            - name: NEO4J_dbms_connector_bolt_tls__level
+            - name: NEO4J_dbms_connector_bolt_tls_level
               value: OPTIONAL
             - name: NEO4J_dbms_ssl_policy_bolt_enabled
               value: true
-            - name: NEO4J_dbms_ssl_policy_bolt_base__directory
+            - name: NEO4J_dbms_ssl_policy_bolt_base_directory
               value: ./ssl/bolt
-            - name: NEO4J_dbms_ssl_policy_bolt_private__key
+            - name: NEO4J_dbms_ssl_policy_bolt_private_key
               value: private.key
-            - name: NEO4J_dbms_ssl_policy_bolt_public__certificate
+            - name: NEO4J_dbms_ssl_policy_bolt_public_certificate
               value: public.crt
-            - name: NEO4J_dbms_ssl_policy_bolt_client__auth
+            - name: NEO4J_dbms_ssl_policy_bolt_client_auth
               value: NONE
             - name: NEO4J_server_https_enabled
               value: true
             - name: NEO4J_dbms_ssl_policy_https_enabled
               value: true
-            - name: NEO4J_dbms_ssl_policy_https_base__directory
+            - name: NEO4J_dbms_ssl_policy_https_base_directory
               value: ./ssl/https
-            - name: NEO4J_dbms_ssl_policy_https_private__key
+            - name: NEO4J_dbms_ssl_policy_https_private_key
               value: private.key
-            - name: NEO4J_dbms_ssl_policy_https_public__certificate
+            - name: NEO4J_dbms_ssl_policy_https_public_certificate
               value: public.crt
-            - name: NEO4J_dbms_ssl_policy_https_client__auth
+            - name: NEO4J_dbms_ssl_policy_https_client_auth
               value: NONE
           logConfiguration:
             logDriver: awslogs
