@@ -112,6 +112,14 @@ Click the button below to deploy a CloudFormation stack. The stack will create a
 
 Navigate to the [ECS repository home page](https://us-east-1.console.aws.amazon.com/ecr/private-registry/repositories). Click on the *neo4j-ecs-w-ssl* repository
 
+<img width="700" alt="ecr_home_page" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/ecr_home_page.png">
+
+Then click on the view push commands button
+
+<img width="700" alt="ecr_push_commands" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/ecr_push_commands.png">
+
+
+
 
 
 4. Deploy Neo4j using on ECS using the customer container image
