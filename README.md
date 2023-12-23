@@ -58,7 +58,7 @@ ssl/
 
 3. Run ```docker-compose up```. Leave the terminal widow open
 
-4. If you are using a self signed certificate go to [https://localhost:7687/](https://localhost:7687/) and accept the security risk. You must allow the browser to ignore the security warning it throw for the self signed certificate
+4. Since we are using self signed certificate go to [https://localhost:7687/](https://localhost:7687/) and accept the security risk. You must allow the browser to ignore the security warning it throw for the self signed certificate
 
 5. Go to [https://localhost:7473/browser/](https://localhost:7473/browser/) via. a web browser. The default user name and password are neo4j / neo4j
 
@@ -138,6 +138,18 @@ To find the URI of the container image, navigate to the [ECS repository home pag
 
 <img width="650" alt="public_access_option_2" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/copy_URI.png">
 
-4. Access Neo4j
+4. Access Neo4j via. the Neo4j dashboard
 
+Before we can navigate to the Neo4j browser we need to find the public IP address assigned to the ECS task. To find the public IP address navigate to the [neo4j-fargate-cluster](https://us-east-1.console.aws.amazon.com/ecs/v2/clusters/neo4j-fargate-cluster/) that was deployed by the CloudFormation template.
 
+Then click on the task tab and then on the task id
+
+<img width="650" alt="public_access_option" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/ecs_task.PNG">
+
+Locate the public IP address field
+
+<img width="650" alt="public_access_option" src="https://github.com/ev2900/Neo4j_Infrastructure/blob/main/README/ecs_task_details.PNG">
+
+Since we are using self signed certificate go to https://**elastic-ip**:7687 and accept the security risk. You must allow the browser to ignore the security warning it throw for the self signed certificate 
+
+Then navigate to https://**elastic-ip**:7473/browser/ . The default username is *neo4j* and the default password is *neo4j*
