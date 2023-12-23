@@ -33,3 +33,6 @@ jobs:
 
       - name: Upload neo4j_ecs_ssl_self-signed.yaml to S3
         run: aws s3 cp /home/runner/work/Neo4j_Infrastructure/Neo4j_Infrastructure/ecs/with_ssl_self-signed/neo4j_ecs_ssl_self-signed.yaml s3://sharkech-public/misc-public/neo4j_ecs_ssl_self-signed.yaml
+
+      - name: Upload ecr_repository.yaml to S3
+        run: aws s3 cp /home/runner/work/Neo4j_Infrastructure/Neo4j_Infrastructure/ecs/with_ssl_self-signed/ecr_repository.yaml s3://sharkech-public/misc-public/ecr_repository.yaml
