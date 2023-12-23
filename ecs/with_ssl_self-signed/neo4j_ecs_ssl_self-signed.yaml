@@ -237,12 +237,6 @@ Resources:
               hostPort: 7473
               protocol: tcp
           environment:
-            - name: NEO4J_dbms_memory_pagecache_size
-              value: 1G
-            - name: NEO4J_dbms.memory.heap.initial_size
-              value: 1G
-            - name: NEO4J_dbms_memory_heap_max_size
-              value: 1G
             - name: NEO4J_server_http_listen_address
               value: 7474
             - name: NEO4J_server_https_listen_address
