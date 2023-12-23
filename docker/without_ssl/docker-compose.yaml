@@ -17,5 +17,4 @@ services:
 
 # docker-compose up
 # Neo4j dashboard = localhost:7474/browser/
-# Connect URL = neo4j://localhost:7687
 # Default Username/Password = neo4j/neo4j
