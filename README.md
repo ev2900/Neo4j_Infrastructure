@@ -1,6 +1,6 @@
 # Neo4j Infrastructure
 
-<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-99-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-658-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-009-green">
+<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-99-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-700-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-009-green">
 
 This repository provides examples and reusable code sample with respect to deploying Neo4j Community Edition.
 
